@@ -1,0 +1,142 @@
+/* Tổng thể form */
+form {
+    max-width: 500px; /* Thu nhỏ độ rộng của form */
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 30px; /* Giảm padding trong form */
+    border-radius: 20px;
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.1); /* Đổ bóng mạnh hơn */
+    font-family: "Roboto", sans-serif;
+    border: 1px solid #eaeaea;
+}
+
+/* Tiêu đề form */
+form h1 {
+    text-align: center;
+    margin-bottom: 20px; /* Giảm khoảng cách dưới tiêu đề */
+    font-size: 28px; /* Thu nhỏ kích thước chữ tiêu đề */
+    font-weight: bold;
+    color: #e74c3c;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.1); /* Bóng mờ cho chữ */
+}
+
+/* Mỗi trường nhập liệu */
+div {
+    margin-bottom: 20px; /* Giảm khoảng cách giữa các trường nhập liệu */
+}
+
+/* Label cho mỗi trường nhập liệu */
+x-input-label {
+    display: block;
+    font-size: 14px; /* Thu nhỏ kích thước chữ cho label */
+    color: #333;
+    margin-bottom: 8px; /* Giảm khoảng cách dưới label */
+    font-weight: 600;
+}
+
+/* Ô input */
+.x-text-input {
+    width: 100%;
+    padding: 12px; /* Thu nhỏ padding trong ô input */
+    font-size: 14px; /* Thu nhỏ kích thước chữ trong ô input */
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    outline: none;
+    box-sizing: border-box;
+    transition: all 0.3s ease;
+    background-color: #f8f8f8;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.05);
+}
+
+.x-text-input:focus {
+    border-color: #3498db;
+    box-shadow: 0 0 10px rgba(52, 152, 219, 0.3); /* Hiệu ứng focus */
+}
+
+/* Thông báo lỗi */
+.x-input-error {
+    color: #e74c3c;
+    font-size: 12px; /* Thu nhỏ kích thước chữ thông báo lỗi */
+    margin-top: 5px;
+    font-weight: 600;
+}
+
+/* Nút "Đăng ký" */
+.x-primary-button {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 12px 24px; /* Giảm padding cho nút */
+    font-size: 16px; /* Thu nhỏ kích thước chữ nút */
+    border-radius: 8px;
+    cursor: pointer;
+    width: 100%;
+    transition: all 0.3s ease;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.x-primary-button:hover {
+    background-color: #2980b9;
+    transform: translateY(-4px); /* Hiệu ứng di chuyển lên khi hover */
+}
+
+.x-primary-button:active {
+    transform: translateY(0); /* Trở lại trạng thái ban đầu khi bấm nút */
+}
+
+/* Link "Already registered?" */
+a {
+    font-size: 12px; /* Thu nhỏ kích thước chữ của link */
+    color: #3498db;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #2980b9;
+}
+
+/* Dạng flex để căn chỉnh phần footer */
+.flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Thêm khoảng cách giữa các phần tử */
+.ms-4 {
+    margin-left: 12px;
+}
+
+/* Thêm khoảng cách giữa các link và button */
+.mt-4 {
+    margin-top: 30px; /* Giảm khoảng cách trên */
+}
+
+/* Tạo hiệu ứng mượt mà cho toàn bộ trang */
+body {
+    font-family: "Roboto", sans-serif;
+    background-color: #f4f7f6;
+    margin: 0;
+    padding: 0;
+}
+
+/* Thêm hiệu ứng load cho form */
+form {
+    opacity: 0;
+    animation: fadeIn 1s forwards;
+}
+
+/* Hiệu ứng fade in khi load trang */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
