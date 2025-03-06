@@ -13,7 +13,7 @@
     <nav class="nav">
       <a class="nav-link home" href="">Trang chủ</a>
       <a class="nav-link" href="#">Giỏ hàng</a>
-      <a class="nav-link" href="#">Tư vấn khách hàng</a>
+      <a href="{{ route('tu-van.index') }}" class="text-white hover:underline">Tư vấn khách hàng</a>
       <a class="nav-link" href="{{ route('login') }}">Đăng nhập</a>
       <a class="nav-link" href="{{ route('register') }}">Đăng kí</a>
     </nav>

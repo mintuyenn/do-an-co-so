@@ -1,5 +1,6 @@
 import { defineConfig } from "vite";
 import laravel from "laravel-vite-plugin";
+import react from "@vitejs/plugin-react"; // ✅ Import React plugin
 import path from "path";
 
 export default defineConfig({
@@ -10,11 +11,13 @@ export default defineConfig({
                 "resources/css/home.css",
                 "resources/css/login.css",
                 "resources/css/register.css",
-                "resources/js/app.js",
+                "resources/js/giohang.js",
                 "resources/js/home.js",
+                "resources/js/app.js",
             ],
             refresh: true,
         }),
+        react(), // ✅ Kích hoạt plugin React
     ],
     resolve: {
         alias: {
